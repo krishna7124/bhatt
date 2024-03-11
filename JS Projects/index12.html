@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Largest Among the Three Numbers | Project 12</title>
+</head>
+<body>
+    <script>
+        // Method - 1: Using Math.max() function
+        // let a = prompt(`Please Enter First Number:`);
+        // let b = prompt(`Please Enter Second Number:`);
+        // let c = prompt(`Please Enter Third Number:`);
+        // let x = Math.max(a,b,c);
+
+        // alert(`${a},${b},${c}: Largest Number = ${x}`);
+
+        // Method - 2 : Using User-Defined Function
+        function check(p,q,r){
+            if(p>=q && p>=r){
+                return p;
+            }
+            else if(q>=p && q>=r){
+                return q;
+            }
+            else{
+                return r;
+            }
+        }
+        let a = prompt(`Please Enter First Number:`);
+        let b = prompt(`Please Enter Second Number:`);
+        let c = prompt(`Please Enter Third Number:`);
+        let x = check(a,b,c);
+
+        alert(`${a},${b},${c}: Largest Number = ${x}`);
+
+    </script>
+</body>
+</html>

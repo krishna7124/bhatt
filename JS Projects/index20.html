@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Number of occurences of a character in a string usng for loop</title>
+</head>
+<body>
+    
+    <script>
+        let str = prompt(`Enter any string: `);
+        let char = prompt(`Enter a character to check occurences: `);
+        let strlen = str.length;
+
+        let counter = 0;
+        for (let i = 0; i < strlen; i++) {
+            if(str[i] == char){
+                counter++;
+            }
+        }
+        alert(`String '${str}' contains letter '${char}', '${counter} times'`)
+
+    </script>
+
+</body>
+</html>

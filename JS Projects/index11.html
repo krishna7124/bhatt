@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Whether the Number is Prime or Not | Project 11</title>
+</head>
+<body>
+    <script>
+        let number = prompt(`Enter Number`);
+
+        if(number == 1){
+            console.log(`${number} is neither Prime nor Composite`);
+        }
+        else if(number < 1){
+            console.log(`${number} cannot be Prime`);
+        }
+        else{
+            for(let i = 2; i < number; i++){
+                if(number%2 == 0){
+                    var result = `${number} is not a Prime NUmber`;
+                break;
+                }
+                else{
+                   var result = `${number} is a Prime Number`;
+                }
+            }
+            console.log(result);
+        }
+        </script>
+</body>
+</html>

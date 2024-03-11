@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check whether the number is Positive, Negative or Zero | Project 8</title>
+</head>
+<body>
+    <input type="number" value="" step="any" id="data" /> 
+    <br>
+    <button onclick="check()">Check</button>
+    <hr> 
+    <h2 id="result"></h2>
+
+    <script>
+        function check(){
+            let value = document.getElementById('data').value;
+            // let result = Math.sign(value);
+            if (value > 0) {
+                result  = `${value} is a Positive Number`;
+            }
+            else if (value < 0) {
+                result  = `${value} is a Negative Number`;
+            }
+            else if(value == 0){
+                result = `${value} is Zero` 
+            }
+            else{
+                result = `${value} is Not a Number`;
+            }
+            document.getElementById('result').innerHTML = `${result}`;
+        }
+    </script>
+</body>
+</html>

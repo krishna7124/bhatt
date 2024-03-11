@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Armstrong Number</title>
+ </head>
+ <body>
+    <script>
+        let number = prompt(`Enter a Number:`);
+        let t = number;
+        let sum = 0;
+        let digit = number.toString();
+        
+        while(t>0){
+             sum += (t%10) ** digit;
+             t = parseInt(t/10);
+        }
+        if(sum == number){
+            console.log(`${number} is an armstrong number`);
+        }
+        else{
+            console.log(`${number} is not an armstrong number`);
+
+        }
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion of Kilometers to Miles | Project 6</title>
+</head>
+<body>
+
+    <input type="number" value="" step="any" id="data" /> KMS 
+    <br>
+    <button onclick="convert()">Convert</button>
+    <hr>
+    <h2 id="result"></h2>
+    
+    <script>
+        function convert(){
+            let kms = document.getElementById('data').value;
+            const factor = 0.621371;
+            let miles = kms * factor;
+            document.getElementById('result').innerText = `${miles} Miles`;
+        }
+    </script>
+</body>
+</html>

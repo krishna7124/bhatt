@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areq of Triangle | Project 4</title>
+</head>
+<body>
+    <script>
+
+        // Area of Right Angle triangle
+        // let base = prompt("Enter Value of Base: ", " ");
+        // let height = prompt("Enter Value of Height: ", " ");
+        // let area = (base * height)/2;
+
+        // console.log('Area of triangle with Base ' + base + ' and Height ' + height + ' is ' + area ); 
+
+        // Area of Any Triangle
+        let a = 10, b = 15, c = 20;
+        let s = (a + b + c)/2;
+        let temp  = s*(s-a)*(s-b)*(s-c);
+        let area = Math.sqrt(temp);
+
+        console.log(area)
+         
+
+
+
+    </script>
+</body>
+</html>

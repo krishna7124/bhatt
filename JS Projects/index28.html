@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator using Switch case</title>
+</head>
+<body>
+    <script>
+        let num1 = prompt(`Enter 1st Number: `);
+        let num2 = prompt(`Enter 2nd Number: `);
+        let opr = prompt(`Please Enter Operator from the following +, -, *, /, % : `);
+
+        switch (opr) {
+            case "+":
+                var res = parseFloat(num1) + parseFloat(num2); 
+                break;
+        
+            case "-":
+                var res = parseFloat(num1) - parseFloat(num2); 
+                break;
+        
+            case "*":
+                var res = parseFloat(num1) * parseFloat(num2); 
+                break;
+        
+            case "/":
+                var res = parseFloat(num1) / parseFloat(num2); 
+                break;
+        
+            case "%":
+                var res = parseFloat(num1) % parseFloat(num2); 
+                break;
+        
+            default:
+                alert(`NaN`);
+                break;
+        }
+        alert(`The ${opr} of ${num1} & ${num2} is ${res} `);
+    </script>
+</body>
+</html>

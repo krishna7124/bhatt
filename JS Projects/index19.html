@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Palidrome using for Loop</title>
+</head>
+<body>
+    <script>
+        let str = prompt(`Please Enter a String: `);
+        let len = str.length;
+        let msg = `It is a Palindrome`;
+        
+        for(let i = 0; i<len/2; i++){
+            if (str[i] != str[len - 1 - i] ) {
+                msg = `It is not a Palindrome`;
+            }
+        }
+        console.log(`${str}: ${msg}`);
+        
+    </script>    
+</body>
+</html>

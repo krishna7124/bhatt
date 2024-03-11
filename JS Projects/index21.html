@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to check whether a string start and ends with specific characters 
+    </title>
+</head>
+<body>
+    <script>
+        let string = prompt(`Enter a String: `);
+        let teststart = string.startsWith('K');
+        let testend = string.endsWith('a');
+
+       if (testend == true && testend == true) {
+        console.log(`String '${string}' Starts with 'K' and Ends with 'A' `);
+        }
+        else if(testend == true && testend == false){
+           console.log(`String '${string}' Starts with 'K' and but not Ends with 'A' `);
+
+       }
+        else if(testend == false && testend == true){
+           console.log(`String '${string}' do not Starts with 'K' and but Ends with 'A' `);
+
+       }
+       else{
+           console.log(`String '${string}' do not Starts with 'K' as well as do not Ends with 'A' `);
+
+       }
+        
+        
+    </script>
+</body>
+</html>

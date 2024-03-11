@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRogram to find Armstrong number between an Interval</title>
+</head>
+<body>
+    <script>
+         let a = prompt(`Enter Start Number`);
+         let b = prompt(`Enter End Number`);
+        
+         // let i;
+         for(let i = a; i<= b; i++){
+             
+             let t = i;
+             let digit = i.toString();
+            let sum = 0;
+            
+            while(t>0){
+                sum += (t%10) ** digit;
+                t = parseInt(t/10);
+            }
+            if(sum == i){
+                console.log(`${i} is an armstrong number`);
+            }
+        }
+        
+    </script>
+</body>
+</html>
